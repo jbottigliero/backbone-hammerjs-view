@@ -58,6 +58,7 @@ Due to the, initial, simplistic nature of this extension you'll need to ensure y
 ```javascript
   var ChildView = Backbone.View.extend({
     tagName: 'h1',
+    className: 'child',
     render: function() {
       this.$el.text('You can\'t tap me!');
       return this;
@@ -79,7 +80,8 @@ Due to the, initial, simplistic nature of this extension you'll need to ensure y
     className: 'container',
     
     events: {
-      'tap .tappable-child' : 'handleChildTap'
+      'tap .tappable-child' : 'handleChildTap',
+      'tap .child'          : 'handleChildTap'
     },
     
     handleChildTap: function(e) {

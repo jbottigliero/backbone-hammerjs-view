@@ -1,0 +1,28 @@
+{
+  "name": "backbone-hammerjs-view",
+  "version": "1.0.0",
+  "homepage": "https://github.com/jbottigliero/backbone-hammerjs-view",
+  "authors": [
+    "Joe Bottigliero <joe@bottigliero.com>"
+  ],
+  "description": "A basic Backbone.js View extension to enable Hammer.JS event bindings.",
+  "main": "src/backbone-hammerjs-view.js",
+  "keywords": [
+    "backbone",
+    "hammer",
+    "touchevents"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.1",
+    "hammerjs": "~2.0.4",
+    "jquery-hammerjs": "~2.0.0"
+  }
+}

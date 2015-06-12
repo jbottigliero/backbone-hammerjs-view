@@ -9,7 +9,12 @@
   "main": "src/backbone-hammerjs-view.js",
   "keywords": [
     "backbone",
+    "backbone.js",
+    "backbonejs",
     "hammer",
+    "hammer.js",
+    "hammerjs",
+    "touch",
     "touchevents"
   ],
   "license": "MIT",

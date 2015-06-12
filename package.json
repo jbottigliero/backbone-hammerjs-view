@@ -1,0 +1,34 @@
+{
+  "name": "backbone-hammerjs-view",
+  "version": "0.9.3",
+  "description": "Simple HammerJS event binding for Backbone.View",
+  "main": "src/backbone-hammerjs-view",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "karma": "^0.12.36",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-qunit": "^0.1.4",
+    "qunitjs": "^1.18.0"
+  },
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbottigliero/backbone-hammerjs-view.git"
+  },
+  "keywords": [
+    "backbone",
+    "hammer",
+    "touch"
+  ],
+  "author": "Joe Bottigliero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbottigliero/backbone-hammerjs-view/issues"
+  },
+  "homepage": "https://github.com/jbottigliero/backbone-hammerjs-view#readme"
+}

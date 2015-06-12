@@ -1,5 +1,7 @@
 (function(){
+  
   'use strict';
+
   test('$el.data(\'hammer\')', function(){
 
     expect(1);
@@ -21,7 +23,7 @@
 
     var view = new Backbone.HammerJSView({
       events: {
-        tap: function(){ ok(true) }
+        tap: function(){ ok(true); }
       }
     });
 
@@ -43,7 +45,7 @@
       },
 
       events: {
-        swipeup   : function() { ok(true, 'The swipeup event was fired.') }
+        swipeup   : function() { ok(true, 'The swipeup event was fired.'); }
       }
     });
 
@@ -56,5 +58,26 @@
 
     view.$el.trigger('swipeup');
   });
+
+  test('.extend', function(){
+
+    expect(1);
+
+    console.log(Backbone.HammerJSView, Backbone.View);
+
+    var View = Backbone.HammerJSView.extend({
+      events: {
+        tap: function() { ok(true); }
+      }
+    });
+
+    var view = new View({
+      el: document.createElement('div')
+    });
+
+    view.$el.trigger('tap');
+
+  });
+
 
 })();

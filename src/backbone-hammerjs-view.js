@@ -4,6 +4,9 @@
  * (c) 2015 Joe Bottigliero
  * Backbone.HammerJSView may be freely distributed under the MIT license.
  */
+
+/* global define, Backbone, _ */
+
 (function(root, factory){
     if (typeof define === 'function' && define.amd) {
       define(['underscore', 'backbone'], factory);
@@ -11,9 +14,9 @@
       factory();
     }
 }(this, function(){
-  
-  'use strict';
 
+  'use strict';
+  
   var hammerViewOptions = ['hammerjs'];
 
   Backbone.HammerJSView = function(options) {
@@ -41,5 +44,7 @@
       }
     }
   );
+
+  Backbone.HammerJSView.extend = Backbone.View.extend;
 
 }));
